@@ -1,0 +1,14 @@
+<h1>Path Finder</h1>
+<p>Welcome to my solution for the Mathspace task!</p>
+
+<body>
+    <form encrypt="multipart/form-data" name="{{ form.form_name }}" method="post" action=".">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if result %}
+    <p>{{result}}</p>
+    {% endif %}
+</body>
